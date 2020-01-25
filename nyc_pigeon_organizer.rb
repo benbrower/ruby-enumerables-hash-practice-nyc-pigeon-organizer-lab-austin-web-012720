@@ -7,7 +7,7 @@ def nyc_pigeon_organizer(data)
   result = {}
 
   data.each do |first_key, hash|
-    has.each do |attribute, array|
+    hash.each do |attribute, array|
       array.each do |name|
         if !result.has_key?(name)
           result[name] = {}
