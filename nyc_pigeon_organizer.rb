@@ -16,7 +16,7 @@ def nyc_pigeon_organizer(data)
           result[name][first_key] = []
         end
         if !result[name][first_key].include?(attribute)
-          result[name][first_key] << "hi"
+          result[name][first_key] << "#{attribute}"
         end
       end
     end
