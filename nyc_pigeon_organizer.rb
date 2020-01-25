@@ -15,7 +15,7 @@ def nyc_pigeon_organizer(data)
         if !result[name].has_key?(first_key)
           result[name][first_key] = []
         end
-        if !result[name][first_key].has_key?(attribute)
+        if !result[name][first_key].include?(attribute)
           result[name][first_key] << "#{attribute}"
         end
       end
