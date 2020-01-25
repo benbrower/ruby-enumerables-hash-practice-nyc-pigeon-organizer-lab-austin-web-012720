@@ -10,13 +10,13 @@ def nyc_pigeon_organizer(data)
     has.each do |attribute, array|
       array.each do |name|
         if !result.has_key?(name)
-          result[name] = {}          
+          result[name] = {}
         end
         if !result[name].has_key?(first_key)
-          result[name][first_key] = []          
+          result[name][first_key] = []
         end
         if !result[name][first_key].has_key?(attribute)
-          result[name][first_key] << "#{attribute}"          
+          result[name][first_key] << "#{attribute}"
         end
       end
     end
