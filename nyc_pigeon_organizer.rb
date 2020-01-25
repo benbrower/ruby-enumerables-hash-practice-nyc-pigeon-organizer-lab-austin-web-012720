@@ -1,3 +1,7 @@
+require 'pp'
+require 'pry'
+
 def nyc_pigeon_organizer(data)
   # write your code here!
+  pp data
 end
